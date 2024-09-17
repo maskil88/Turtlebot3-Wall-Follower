@@ -44,7 +44,7 @@ class Turtlebot3Drive : public rclcpp::Node
 
     // ROS topic publishers
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
-    // rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub_;  // Path publisher for RViz visualization
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub_;  // Path publisher for RViz visualization
 
     // ROS topic subscribers
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
@@ -58,7 +58,7 @@ class Turtlebot3Drive : public rclcpp::Node
     double scan_data_[7];
 
     // Path message for RViz visualization
-    // nav_msgs::msg::Path path_msg_;
+    nav_msgs::msg::Path path_msg_;
 
     // ROS timer
     rclcpp::TimerBase::SharedPtr update_timer_;

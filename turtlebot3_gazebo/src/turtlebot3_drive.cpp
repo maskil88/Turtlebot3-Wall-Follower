@@ -19,7 +19,7 @@ Turtlebot3Drive::Turtlebot3Drive()
   cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", qos);
 
   // Path publisher to visualize the robot's path
-  // path_pub_ = this->create_publisher<nav_msgs::msg::Path>("path", qos);
+  path_pub_ = this->create_publisher<nav_msgs::msg::Path>("path", qos);
 
 
   // Initialise LIDAR subscriber
@@ -60,21 +60,21 @@ void Turtlebot3Drive::odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg
   robot_pose_ = yaw;
 
   // Create a message with current odometry data
-  // geometry_msgs::msg::PoseStamped pose_stamped;
-  // pose_stamped.header.stamp = msg->header.stamp;
-  // pose_stamped.header.frame_id = "odom";  // Frame in which the path is published
+  geometry_msgs::msg::PoseStamped pose_stamped;
+  pose_stamped.header.stamp = msg->header.stamp;
+  pose_stamped.header.frame_id = "odom";  // Frame in which the path is published
 
-  // // Set the position and orientation of the turtlebot
-  // pose_stamped.pose.position.x = msg->pose.pose.position.x;
-  // pose_stamped.pose.position.y = msg->pose.pose.position.y;
-  // pose_stamped.pose.position.z = 0.0;
-  // pose_stamped.pose.orientation = msg->pose.pose.orientation;  // Use the same orientation as odometry
+  // Set the position and orientation of the turtlebot
+  pose_stamped.pose.position.x = msg->pose.pose.position.x;
+  pose_stamped.pose.position.y = msg->pose.pose.position.y;
+  pose_stamped.pose.position.z = 0.0;
+  pose_stamped.pose.orientation = msg->pose.pose.orientation;  // Use the same orientation as odometry
 
-  // // Append the new pose to the path message
-  // path_msg_.poses.push_back(pose_stamped);
+  // Append the new pose to the path message
+  path_msg_.poses.push_back(pose_stamped);
 
-  // // Publish the path message
-  // path_pub_->publish(path_msg_);
+  // Publish the path message
+  path_pub_->publish(path_msg_);
 }
 //---
 void Turtlebot3Drive::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
