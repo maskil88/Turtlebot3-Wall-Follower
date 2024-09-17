@@ -1,24 +1,9 @@
-// Copyright 2019 ROBOTIS CO., LTD.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-//
-// Authors: Taehun Lim (Darby), Ryan Shim
-
 #ifndef TURTLEBOT3_GAZEBO__TURTLEBOT3_DRIVE_HPP_
 #define TURTLEBOT3_GAZEBO__TURTLEBOT3_DRIVE_HPP_
 
 #include <geometry_msgs/msg/twist.hpp>
 #include <nav_msgs/msg/odometry.hpp>
+#include <nav_msgs/msg/path.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <tf2/LinearMath/Matrix3x3.h>
@@ -27,44 +12,73 @@
 #define DEG2RAD (M_PI / 180.0)
 #define RAD2DEG (180.0 / M_PI)
 
-#define CENTER 0
-#define LEFT   1
-#define RIGHT  2
+#define NUM_LIDAR_ANGLES 7
 
-#define LINEAR_VELOCITY  0.3
-#define ANGULAR_VELOCITY 1.5
+// LIDAR indices for each angle
+#define FRONT 0                     // Forward (0°)
+#define LEFT_FRONT 1                // Left-Front (30°)
+#define LEFT_FRONT_INTERMEDIATE 2   // Left-Front Intermediate (60°)
+#define LEFT 3                      // Left (90°)
+#define FAR_LEFT 4                  // Far-Left (120°)
+#define RIGHT 5                     // Right (270°)
+#define RIGHT_FRONT 6               // Right-Front (330°)
 
-#define GET_TB3_DIRECTION 0
-#define TB3_DRIVE_FORWARD 1
-#define TB3_RIGHT_TURN    2
-#define TB3_LEFT_TURN     3
+// State definitions for the robot's behaviour
+#define GET_TB3_DIRECTION 0         // Default state
+#define TB3_DRIVE_FORWARD 1         // Forward state
+#define TB3_RIGHT_TURN    2         // Turn-right state
+#define TB3_LEFT_TURN     3         // Turn-left state
+#define TB3_PAUSE_BEFORE_ALIGN 4    // Pause state
+#define TB3_ALIGN_WITH_WALL 5       // Alignment state
+
 
 class Turtlebot3Drive : public rclcpp::Node
 {
-public:
-  Turtlebot3Drive();
-  ~Turtlebot3Drive();
+  public:
 
-private:
-  // ROS topic publishers
-  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
+    //---Constructor & Destructor---------------------------------------------------------------
+    Turtlebot3Drive();
+    ~Turtlebot3Drive();
 
-  // ROS topic subscribers
-  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
-  rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+  private:
 
-  // Variables
-  double robot_pose_;
-  double prev_robot_pose_;
-  double scan_data_[3];
+    // ROS topic publishers
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
+    // rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub_;  // Path publisher for RViz visualization
 
-  // ROS timer
-  rclcpp::TimerBase::SharedPtr update_timer_;
+    // ROS topic subscribers
+    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
+    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
 
-  // Function prototypes
-  void update_callback();
-  void update_cmd_vel(double linear, double angular);
-  void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
-  void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg);
+    // Variables
+    double robot_pose_;
+    double prev_robot_pose_;
+
+    // LIDAR angle data (0-6)
+    double scan_data_[7];
+
+    // Path message for RViz visualization
+    // nav_msgs::msg::Path path_msg_;
+
+    // ROS timer
+    rclcpp::TimerBase::SharedPtr update_timer_;
+    rclcpp::TimerBase::SharedPtr pause_timer_;    // Timer for pause before alignment
+
+    // Main control loop for wall-following
+    void update_callback();
+
+    // Update the robot's velocity to the given input
+    void update_cmd_vel(double linear, double angular);
+
+    // Handles laser scan data
+    void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
+    
+    // Handles odometry data and path-finding
+    void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg);
+
+    // Callback function for the pause timer
+    void pause_timer_callback();
 };
-#endif  // TURTLEBOT3_GAZEBO__TURTLEBOT3_DRIVE_HPP_
+
+
+#endif 
