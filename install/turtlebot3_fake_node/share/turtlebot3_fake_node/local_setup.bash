@@ -1,1 +1,1 @@
-/home/kivaan123/turtlebot3_simulations/build/turtlebot3_fake_node/ament_cmake_environment_hooks/local_setup.bash
+/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_fake_node/ament_cmake_environment_hooks/local_setup.bash

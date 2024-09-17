@@ -1,1 +1,1 @@
-/home/kivaan123/turtlebot3_simulations/turtlebot3_fake_node/launch/rviz2.launch.py
+/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_fake_node/launch/rviz2.launch.py
