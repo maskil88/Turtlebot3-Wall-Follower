@@ -40,8 +40,12 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
    cd turtlebot3-wall-following
 
 2. follow the links below to install ROS 2 Humble, OpenCV,
-3. Build the workspace: colcon build
-4. Source the workspace: source install/setup.bash
+3. Build the workspace:
+   ```bash
+   colcon build
+6. Source the workspace:
+   ```bash
+   source install/setup.bash
 
 
 ## Usage Instructions
@@ -51,7 +55,7 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
    ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 2. Run the robot:
    ```bash
-  ros2 run turtlebot3_gazebo turtlebot3_drive
+   ros2 run turtlebot3_gazebo turtlebot3_drive
 
 4. Visualize path:
    ```bash
