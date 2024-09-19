@@ -9,23 +9,29 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
 - **Camera-Based Maze Exit Detection**: The robot uses a camera to detect green blocks as an indication of the end of the maze.
 - **Path Visualization**: Visualizes the robot's path based on odometry data for easier debugging.
   
-## Project Structure
+## Files that have been modified to implement wall following capability
 
-- `src/`
+- `turtlebot3_gazebo/src/`
   - `turtlebot3_drive.cpp`: Main node controlling the robot's behavior.
   - `WallFollower.cpp`: Implements the left wall-following logic using LIDAR data.
   - `LidarSensor.cpp`: Handles LIDAR sensor data to detect obstacles and walls.
   - `MovementController.cpp`: Publishes velocity commands to the robot's wheels.
   - `CameraProcessor.cpp`: Processes camera feed to detect green blocks.
   - `PathViz.cpp`: Publishes the robot's path for visualization.
-- `include/`
+- `turtlebot3_gazebo/include/turtlebot3_gazebo/`
   - `turtlebot3_drive.hpp`: Header file for the `Turtlebot3Drive` node.
   - `WallFollower.hpp`: Header file for wall-following logic.
   - `LidarSensor.hpp`: Header file for handling LIDAR data.
   - `MovementController.hpp`: Header file for controlling robot movement.
   - `CameraProcessor.hpp`: Header file for processing camera images.
   - `PathViz.hpp`: Header file for visualizing the robot's path.
-
+- `turtlebot3_gazebo/models/turtlebot3_burger/`
+  - `model.sdf`: Camera configuration on turtlebot burger.
+- `turtlebot3_gazebo/`
+  - `CMakeLists.txt`
+- `turtlebot3_gazebo/worlds`
+  - `empty_world.world`: Maps drawn into empty world.
+  
 ## Dependencies
 - **ROS 2 Humble**: The project is built using ROS 2. Install ROS 2 Humble from the official [ROS website](https://docs.ros.org/en/humble/Installation.html).
 - **OpenCV**: The project requires OpenCV for image processing.
