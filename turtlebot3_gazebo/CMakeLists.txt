@@ -27,6 +27,8 @@ find_package(nav_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(image_transport REQUIRED)    
+find_package(cv_bridge REQUIRED)           
 
 ################################################################################
 # Build
@@ -46,13 +48,25 @@ set(dependencies
   "rclcpp"
   "sensor_msgs"
   "tf2"
+  "image_transport"
+  "cv_bridge"         
 )
 
 set(EXEC_NAME "turtlebot3_drive")
 
-add_executable(${EXEC_NAME} src/turtlebot3_drive.cpp)
+# Add source files for the executable
+add_executable(${EXEC_NAME}
+  src/turtlebot3_drive.cpp
+  src/LidarSensor.cpp          
+  src/MovementController.cpp   
+  src/PathViz.cpp              
+  src/WallFollower.cpp    
+  src/CameraProcessor.cpp     
+)
+
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
 
+# Add shared libraries
 add_library(obstacle1 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc)
 target_link_libraries(obstacle1 ${GAZEBO_LIBRARIES})
 
