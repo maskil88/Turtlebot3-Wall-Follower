@@ -1,22 +1,27 @@
 #ifndef MOVEMENT_CONTROLLER_HPP_
 #define MOVEMENT_CONTROLLER_HPP_
 
-#include <geometry_msgs/msg/twist.hpp>
+//---Includes------------------------------------------------------------------------------
 #include <rclcpp/rclcpp.hpp>
+#include <geometry_msgs/msg/twist.hpp>
 
+//---MovementController Interface----------------------------------------------------------
 class MovementController
 {
     public:
-        //---Constructor & Destructor-----------------------------------------------------
-        MovementController(rclcpp::Node::SharedPtr node);
-        ~MovementController() = default;
 
-        // Update the robot's velocity
-        void updateCmdVel(double linear, double angular);
+        //---Constructor & Destructor------------------------------------------------------
+        MovementController(rclcpp::Node* node);
+        ~MovementController();
+
+        // Updates the command velocity specified by inputs
+        void update_cmd_vel(double linear, double angular);
 
     private:
-        
-        rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
+
+        rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;   // Twist subscriber variable
+        rclcpp::Node* node_;
+
 };
 
 #endif
