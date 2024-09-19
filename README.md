@@ -49,13 +49,16 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
 1. Launch the TurtleBot3 simulation with the maze:
    ```bash
    ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-2. Run
+2. Run the robot:
+   ```bash
   ros2 run turtlebot3_gazebo turtlebot3_drive
 
-3. Visualize path
+4. Visualize path:
+   ```bash
    ros2 run rviz2 rviz2
 
-4. Visualize camera feed (optional)
+5. Visualize camera feed (optional):
+   ```bash
    ros2 run image_view image_view image:=/camera/image_raw
    
 ## License
