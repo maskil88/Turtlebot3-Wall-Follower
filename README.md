@@ -1,3 +1,86 @@
+# TurtleBot3 Left Wall-Following Robot with Camera and LIDAR
+
+## Project Description
+This project implements a left-wall-following robot using the TurtleBot3 platform. The robot is equipped with a LIDAR sensor for obstacle avoidance, a camera for detecting green blocks, and a path visualization feature. The robot autonomously navigates through both enclosed and open mazes by maintaining a set distance from the left wall, turning appropriately, and detecting the end of the maze using a green block.
+
+## Features
+- **Left Wall-Following**: The robot uses LIDAR data to maintain a specific distance from the left wall.
+- **Obstacle Avoidance**: Detects obstacles in front using LIDAR and makes decisions to avoid collisions.
+- **Camera-Based Maze Exit Detection**: The robot uses a camera to detect green blocks as an indication of the end of the maze.
+- **Path Visualization**: Visualizes the robot's path based on odometry data for easier debugging.
+  
+## Files that have been modified to implement wall following capability
+
+- `turtlebot3_gazebo/src/`
+  - `turtlebot3_drive.cpp`: Main node controlling the robot's behavior.
+  - `WallFollower.cpp`: Implements the left wall-following logic using LIDAR data.
+  - `LidarSensor.cpp`: Handles LIDAR sensor data to detect obstacles and walls.
+  - `MovementController.cpp`: Publishes velocity commands to the robot's wheels.
+  - `CameraProcessor.cpp`: Processes camera feed to detect green block that signals end of maze.
+  - `PathViz.cpp`: Publishes the robot's path for visualization.
+- `turtlebot3_gazebo/include/turtlebot3_gazebo/`
+  - `turtlebot3_drive.hpp`: Header file for the `Turtlebot3Drive` node.
+  - `WallFollower.hpp`: Header file for wall-following logic.
+  - `LidarSensor.hpp`: Header file for handling LIDAR data.
+  - `MovementController.hpp`: Header file for controlling robot movement.
+  - `CameraProcessor.hpp`: Header file for processing camera images.
+  - `PathViz.hpp`: Header file for visualizing the robot's path.
+- `turtlebot3_gazebo/models/turtlebot3_burger/`
+  - `model.sdf`: Camera configuration on turtlebot burger.
+- `turtlebot3_gazebo/`
+  - `CMakeLists.txt`
+- `turtlebot3_gazebo/worlds`
+
+  
+## Dependencies
+- **ROS 2 Humble**: The project is built using ROS 2. Install ROS 2 Humble from the official [ROS website](https://docs.ros.org/en/humble/Installation.html).
+- **OpenCV**: The project requires OpenCV for image processing.
+- **TurtleBot3**: Ensure TurtleBot3 simulation packages are installed.
+- **LIDAR and Camera**: The robot uses LIDAR and camera for sensor input.
+
+## Installation
+1. Simulate a Turtlebot 3 in RViz and Gazebo, including simulated laser and camera:
+   follow the instructions here, up to and including Section 6.2. Select humble:
+   https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/
+
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/turtlebot3-wall-following.git
+   cd turtlebot3-wall-following
+
+3. If you're having trouble launching, use the following commands
+   ```bash
+   killall gzserver
+   killall gzclient
+   . /usr/share/gazebo/setup.sh
+
+
+## Usage Instructions
+
+1. Launch the TurtleBot3 simulation with the maze:
+   ```bash
+   ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+   
+2. Run the robot:
+   ```bash
+   ros2 run turtlebot3_gazebo turtlebot3_drive
+   
+3. Place the robot adjacent to the left wall at the starting point. Regardless of the orientation, the robot will find the closest wall to it's left and align itself to it.
+  
+4. Insert the green block at the end of the maze, parallel to the left wall.
+
+5. Visualize path:
+   ```bash
+   ros2 run rviz2 rviz2
+
+6. Visualize camera feed (optional):
+   ```bash
+   ros2 run image_view image_view image:=/camera/image_raw
+   
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
 # TurtleBot3
 <img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/turtlebot3/logo_turtlebot3.png" width="300">
 
