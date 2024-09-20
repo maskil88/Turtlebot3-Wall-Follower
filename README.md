@@ -66,13 +66,14 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
    ros2 run turtlebot3_gazebo turtlebot3_drive
    
 3. Place the robot adjacent to the left wall at the starting point. Regardless of the orientation, the robot will find the closest wall to it's left and align itself to it.
-5. Place the green block at the end of the maze, parallel to the left wall.
+  
+4. Insert the green block at the end of the maze, parallel to the left wall.
 
-7. Visualize path:
+5. Visualize path:
    ```bash
    ros2 run rviz2 rviz2
 
-8. Visualize camera feed (optional):
+6. Visualize camera feed (optional):
    ```bash
    ros2 run image_view image_view image:=/camera/image_raw
    
