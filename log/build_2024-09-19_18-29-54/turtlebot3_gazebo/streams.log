@@ -1,0 +1,90 @@
+[0.008s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[0.092s] [ 16%] Built target obstacle2
+[0.094s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/MovementController.cpp.o[0m
+[0.095s] [ 33%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/PathViz.cpp.o[0m
+[0.096s] [ 50%] Built target obstacle1
+[0.097s] [ 66%] Built target obstacles
+[0.098s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[1.501s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/MovementController.cpp:3:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KMovementController::MovementController()[m[K’
+[1.501s]     3 | [01;31m[KMovementController[m[K::MovementController(){}
+[1.501s]       | [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.501s] In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/MovementController.cpp:1[m[K:
+[1.501s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/MovementController.hpp:7:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KMovementController::MovementController(const MovementController&)[m[K’
+[1.501s]     7 | class [01;36m[KMovementController[m[K
+[1.501s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.501s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/MovementController.hpp:11:9:[m[K [01;36m[Knote: [m[K                ‘[01m[KMovementController::MovementController(rclcpp::Node::SharedPtr)[m[K’
+[1.502s]    11 |         [01;36m[KMovementController[m[K(rclcpp::Node::SharedPtr node);
+[1.502s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.502s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/MovementController.hpp:7:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MovementController[m[K’ defined here
+[1.502s]     7 | class [01;36m[KMovementController[m[K
+[1.502s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.507s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/PathViz.cpp:3:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KPathViz::PathViz()[m[K’
+[1.507s]     3 | [01;31m[KPathViz[m[K::PathViz(){}
+[1.507s]       | [01;31m[K^~~~~~~[m[K
+[1.507s] In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/PathViz.cpp:1[m[K:
+[1.507s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/PathViz.hpp:7:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KPathViz::PathViz(const PathViz&)[m[K’
+[1.507s]     7 | class [01;36m[KPathViz[m[K
+[1.507s]       |       [01;36m[K^~~~~~~[m[K
+[1.507s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/PathViz.hpp:10:9:[m[K [01;36m[Knote: [m[K                ‘[01m[KPathViz::PathViz(rclcpp::Node::SharedPtr)[m[K’
+[1.507s]    10 |         [01;36m[KPathViz[m[K(rclcpp::Node::SharedPtr node);
+[1.508s]       |         [01;36m[K^~~~~~~[m[K
+[1.508s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/PathViz.hpp:7:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass PathViz[m[K’ defined here
+[1.508s]     7 | class [01;36m[KPathViz[m[K
+[1.508s]       |       [01;36m[K^~~~~~~[m[K
+[1.595s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In constructor ‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’:
+[1.595s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:36:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMovementController::MovementController()[m[K’
+[1.595s]    36 |         [01;31m[Kmovement_controller_()[m[K,
+[1.595s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.595s] In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:13[m[K:
+[1.595s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/MovementController.hpp:11:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMovementController::MovementController(rclcpp::Node::SharedPtr)[m[K’
+[1.595s]    11 |         [01;36m[KMovementController[m[K(rclcpp::Node::SharedPtr node);
+[1.595s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.596s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/MovementController.hpp:11:9:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.596s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/MovementController.hpp:7:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMovementController::MovementController(const MovementController&)[m[K’
+[1.596s]     7 | class [01;36m[KMovementController[m[K
+[1.596s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.596s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/MovementController.hpp:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.596s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:37:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPathViz::PathViz()[m[K’
+[1.596s]    37 |         [01;31m[Kpath_viz_()[m[K,
+[1.596s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[1.596s] In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:14[m[K:
+[1.596s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/PathViz.hpp:10:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KPathViz::PathViz(rclcpp::Node::SharedPtr)[m[K’
+[1.596s]    10 |         [01;36m[KPathViz[m[K(rclcpp::Node::SharedPtr node);
+[1.596s]       |         [01;36m[K^~~~~~~[m[K
+[1.596s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/PathViz.hpp:10:9:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.597s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/PathViz.hpp:7:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KPathViz::PathViz(const PathViz&)[m[K’
+[1.597s]     7 | class [01;36m[KPathViz[m[K
+[1.597s]       |       [01;36m[K^~~~~~~[m[K
+[1.597s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/PathViz.hpp:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.978s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:104: CMakeFiles/turtlebot3_drive.dir/src/MovementController.cpp.o] Error 1
+[1.978s] gmake[2]: *** Waiting for unfinished jobs....
+[1.988s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:118: CMakeFiles/turtlebot3_drive.dir/src/PathViz.cpp.o] Error 1
+[2.130s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[2.130s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[2.130s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[2.130s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[2.130s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[2.130s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8[m[K,
+[2.131s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[2.131s]                  from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:2[m[K:
+[2.131s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Turtlebot3Drive; _Args = {}; _Tp = Turtlebot3Drive][m[K’:
+[2.131s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Turtlebot3Drive; _Args = {}; _Tp = Turtlebot3Drive; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Turtlebot3Drive>][m[K’
+[2.131s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = Turtlebot3Drive; _Alloc = std::allocator<Turtlebot3Drive>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.131s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Turtlebot3Drive; _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.131s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}; _Tp = Turtlebot3Drive; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.131s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}; _Tp = Turtlebot3Drive][m[K’
+[2.131s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Turtlebot3Drive; _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}][m[K’
+[2.131s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Turtlebot3Drive; _Args = {}][m[K’
+[2.131s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:97:51:[m[K   required from here
+[2.131s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’ is private within this context
+[2.131s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[2.131s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.132s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:33:7:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.132s]    33 |       [01;36m[KTurtlebot3Drive[m[K()
+[2.132s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.540s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+[3.540s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+[3.540s] gmake: *** [Makefile:146: all] Error 2
+[3.543s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16

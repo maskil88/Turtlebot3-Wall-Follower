@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[ 16%] Built target obstacle2
+[ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/MovementController.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/PathViz.cpp.o[0m
+[ 50%] Built target obstacle1
+[ 66%] Built target obstacles
+[ 75%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m

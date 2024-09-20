@@ -1,0 +1,100 @@
+[0.008s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[0.069s] [ 12%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[0.074s] [ 37%] Built target obstacle2
+[0.074s] [ 62%] Built target obstacles
+[0.076s] [ 87%] Built target obstacle1
+[1.710s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In member function ‘[01m[Kvoid Turtlebot3Drive::update_callback()[m[K’:
+[1.710s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:144:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_turn_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.710s]   144 |   double [01;35m[Kmin_turn_distance[m[K = 0.1;         // Minimum distance before making a turn
+[1.710s]       |          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[9.007s] [100%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[9.615s] [100%] Built target turtlebot3_drive
+[9.624s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[9.702s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo
+[9.717s] -- Install configuration: ""
+[9.718s] -- Execute custom install script
+[9.718s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[9.719s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[9.719s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[9.719s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[9.719s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[9.719s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[9.720s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[9.720s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[9.720s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[9.720s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[9.720s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[9.720s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[9.721s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[9.722s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/LidarSensor.hpp
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/MovementController.hpp
+[9.723s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/PathViz.hpp
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/WallFollower.hpp
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[9.724s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[9.724s] -- Symlinking: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[9.731s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[9.731s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.731s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.731s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[9.731s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[9.731s] -- Up-to-date symlink: /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[9.732s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo

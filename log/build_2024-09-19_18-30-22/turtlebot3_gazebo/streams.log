@@ -1,0 +1,41 @@
+[0.008s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[0.121s] [ 16%] Built target obstacles
+[0.122s] [ 33%] Built target obstacle1
+[0.125s] [ 41%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[0.127s] [ 58%] Built target obstacle2
+[0.130s] [ 66%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/PathViz.cpp.o[0m
+[0.130s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/MovementController.cpp.o[0m
+[0.130s] [ 83%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/WallFollower.cpp.o[0m
+[1.575s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/WallFollower.cpp:[m[K In member function ‘[01m[Kvoid WallFollower::update()[m[K’:
+[1.575s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/WallFollower.cpp:12:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_turn_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.575s]    12 |     double [01;35m[Kmin_turn_distance[m[K = 0.1;
+[1.575s]       |            [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[2.186s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[2.186s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[2.186s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[2.186s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[2.186s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[2.186s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[2.186s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8[m[K,
+[2.186s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[2.186s]                  from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:2[m[K:
+[2.186s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Turtlebot3Drive; _Args = {}; _Tp = Turtlebot3Drive][m[K’:
+[2.186s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Turtlebot3Drive; _Args = {}; _Tp = Turtlebot3Drive; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Turtlebot3Drive>][m[K’
+[2.187s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = Turtlebot3Drive; _Alloc = std::allocator<Turtlebot3Drive>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.187s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Turtlebot3Drive; _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.187s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}; _Tp = Turtlebot3Drive; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.187s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}; _Tp = Turtlebot3Drive][m[K’
+[2.187s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Turtlebot3Drive; _Alloc = std::allocator<Turtlebot3Drive>; _Args = {}][m[K’
+[2.187s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Turtlebot3Drive; _Args = {}][m[K’
+[2.187s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:97:51:[m[K   required from here
+[2.187s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’ is private within this context
+[2.187s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[2.187s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.187s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:33:7:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.187s]    33 |       [01;36m[KTurtlebot3Drive[m[K()
+[2.187s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.574s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+[3.575s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+[3.575s] gmake: *** [Makefile:146: all] Error 2
+[3.577s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16

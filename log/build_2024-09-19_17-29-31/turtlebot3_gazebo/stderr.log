@@ -1,0 +1,27 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:23 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+/usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `Turtlebot3Drive::Turtlebot3Drive()':
+turtlebot3_drive.cpp:(.text._ZN15Turtlebot3DriveC2Ev[_ZN15Turtlebot3DriveC5Ev]+0x10a): undefined reference to `LidarSensor::LidarSensor()'
+/usr/bin/ld: turtlebot3_drive.cpp:(.text._ZN15Turtlebot3DriveC2Ev[_ZN15Turtlebot3DriveC5Ev]+0x147): undefined reference to `MovementController::MovementController(std::shared_ptr<rclcpp::Node>)'
+/usr/bin/ld: turtlebot3_drive.cpp:(.text._ZN15Turtlebot3DriveC2Ev[_ZN15Turtlebot3DriveC5Ev]+0x193): undefined reference to `PathViz::PathViz(std::shared_ptr<rclcpp::Node>)'
+/usr/bin/ld: turtlebot3_drive.cpp:(.text._ZN15Turtlebot3DriveC2Ev[_ZN15Turtlebot3DriveC5Ev]+0x1d6): undefined reference to `WallFollower::WallFollower(LidarSensor&, MovementController&)'
+/usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `Turtlebot3Drive::scan_callback(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void> > >)':
+turtlebot3_drive.cpp:(.text._ZN15Turtlebot3Drive13scan_callbackESt10shared_ptrIN11sensor_msgs3msg10LaserScan_ISaIvEEEE[_ZN15Turtlebot3Drive13scan_callbackESt10shared_ptrIN11sensor_msgs3msg10LaserScan_ISaIvEEEE]+0x2a): undefined reference to `LidarSensor::processScan(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void> > > const&)'
+/usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `Turtlebot3Drive::odom_callback(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >)':
+turtlebot3_drive.cpp:(.text._ZN15Turtlebot3Drive13odom_callbackESt10shared_ptrIN8nav_msgs3msg9Odometry_ISaIvEEEE[_ZN15Turtlebot3Drive13odom_callbackESt10shared_ptrIN8nav_msgs3msg9Odometry_ISaIvEEEE]+0xe3): undefined reference to `PathViz::updatePath(geometry_msgs::msg::PoseStamped_<std::allocator<void> > const&)'
+/usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `Turtlebot3Drive::update_callback()':
+turtlebot3_drive.cpp:(.text._ZN15Turtlebot3Drive15update_callbackEv[_ZN15Turtlebot3Drive15update_callbackEv]+0x1e): undefined reference to `WallFollower::update()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:184: turtlebot3_drive] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

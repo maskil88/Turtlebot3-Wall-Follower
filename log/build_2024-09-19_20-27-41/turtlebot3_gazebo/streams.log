@@ -1,0 +1,31 @@
+[0.007s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[0.060s] [ 22%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[0.060s] [ 33%] Built target obstacles
+[0.062s] [ 44%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.o[0m
+[0.063s] [ 66%] Built target obstacle1
+[0.065s] [ 88%] Built target obstacle2
+[4.977s] [100%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `Turtlebot3Drive::update_callback()':
+[5.206s] turtlebot3_drive.cpp:(.text+0x9e4): undefined reference to `WallFollower::update()'
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::_MakeUniq<MovementController>::__single_object std::make_unique<MovementController, Turtlebot3Drive*>(Turtlebot3Drive*&&)':
+[5.206s] turtlebot3_drive.cpp:(.text._ZSt11make_uniqueI18MovementControllerJP15Turtlebot3DriveEENSt9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueI18MovementControllerJP15Turtlebot3DriveEENSt9_MakeUniqIT_E15__single_objectEDpOT0_]+0x39): undefined reference to `MovementController::MovementController(rclcpp::Node*)'
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::_MakeUniq<CameraProcessor>::__single_object std::make_unique<CameraProcessor, Turtlebot3Drive*>(Turtlebot3Drive*&&)':
+[5.206s] turtlebot3_drive.cpp:(.text._ZSt11make_uniqueI15CameraProcessorJP15Turtlebot3DriveEENSt9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueI15CameraProcessorJP15Turtlebot3DriveEENSt9_MakeUniqIT_E15__single_objectEDpOT0_]+0x39): undefined reference to `CameraProcessor::CameraProcessor(rclcpp::Node*)'
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::_MakeUniq<PathViz>::__single_object std::make_unique<PathViz, Turtlebot3Drive*>(Turtlebot3Drive*&&)':
+[5.206s] turtlebot3_drive.cpp:(.text._ZSt11make_uniqueI7PathVizJP15Turtlebot3DriveEENSt9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueI7PathVizJP15Turtlebot3DriveEENSt9_MakeUniqIT_E15__single_objectEDpOT0_]+0x39): undefined reference to `PathViz::PathViz(rclcpp::Node*)'
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::_MakeUniq<WallFollower>::__single_object std::make_unique<WallFollower, Turtlebot3Drive*, LidarSensor*, MovementController*, CameraProcessor*>(Turtlebot3Drive*&&, LidarSensor*&&, MovementController*&&, CameraProcessor*&&)':
+[5.206s] turtlebot3_drive.cpp:(.text._ZSt11make_uniqueI12WallFollowerJP15Turtlebot3DriveP11LidarSensorP18MovementControllerP15CameraProcessorEENSt9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueI12WallFollowerJP15Turtlebot3DriveP11LidarSensorP18MovementControllerP15CameraProcessorEENSt9_MakeUniqIT_E15__single_objectEDpOT0_]+0x81): undefined reference to `WallFollower::WallFollower(rclcpp::Node*, LidarSensor*, MovementController*, CameraProcessor*)'
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::default_delete<MovementController>::operator()(MovementController*) const':
+[5.206s] turtlebot3_drive.cpp:(.text._ZNKSt14default_deleteI18MovementControllerEclEPS0_[_ZNKSt14default_deleteI18MovementControllerEclEPS0_]+0x22): undefined reference to `MovementController::~MovementController()'
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::default_delete<CameraProcessor>::operator()(CameraProcessor*) const':
+[5.206s] turtlebot3_drive.cpp:(.text._ZNKSt14default_deleteI15CameraProcessorEclEPS0_[_ZNKSt14default_deleteI15CameraProcessorEclEPS0_]+0x22): undefined reference to `CameraProcessor::~CameraProcessor()'
+[5.206s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::default_delete<PathViz>::operator()(PathViz*) const':
+[5.207s] turtlebot3_drive.cpp:(.text._ZNKSt14default_deleteI7PathVizEclEPS0_[_ZNKSt14default_deleteI7PathVizEclEPS0_]+0x22): undefined reference to `PathViz::~PathViz()'
+[5.207s] /usr/bin/ld: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: in function `std::default_delete<WallFollower>::operator()(WallFollower*) const':
+[5.207s] turtlebot3_drive.cpp:(.text._ZNKSt14default_deleteI12WallFollowerEclEPS0_[_ZNKSt14default_deleteI12WallFollowerEclEPS0_]+0x22): undefined reference to `WallFollower::~WallFollower()'
+[5.229s] collect2: error: ld returned 1 exit status
+[5.230s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:206: turtlebot3_drive] Error 1
+[5.230s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+[5.230s] gmake: *** [Makefile:146: all] Error 2
+[5.232s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16

@@ -59,6 +59,11 @@
 /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
 /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
 /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+/home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/CameraProcessor.hpp
+/home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/LidarSensor.hpp
+/home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/MovementController.hpp
+/home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/PathViz.hpp
+/home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/WallFollower.hpp
 /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
 /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
 /home/kivaan123/Turtlebot3-Wall-Follower/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo

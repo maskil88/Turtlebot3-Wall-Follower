@@ -1,0 +1,46 @@
+[0.008s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[0.066s] [ 11%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[0.067s] [ 33%] Built target obstacle1
+[0.069s] [ 55%] Built target obstacles
+[0.072s] [ 77%] Built target obstacle2
+[1.671s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In constructor ‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’:
+[1.671s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:11:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique_ptr[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmake_unique[m[K’?
+[1.671s]    11 |     lidar_sensor_ = std::[01;31m[Kmake_unique_ptr[m[K<LidarSensor>(this);
+[1.671s]       |                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.671s]       |                          [32m[Kmake_unique[m[K
+[1.671s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:11:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.671s]    11 |     lidar_sensor_ = std::make_unique_ptr<LidarSensor[01;31m[K>[m[K(this);
+[1.671s]       |                                                     [01;31m[K^[m[K
+[1.672s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:12:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique_ptr[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmake_unique[m[K’?
+[1.672s]    12 |     movement_controller_ = std::[01;31m[Kmake_unique_ptr[m[K<MovementController>(this);
+[1.672s]       |                                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.672s]       |                                 [32m[Kmake_unique[m[K
+[1.672s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:12:67:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.672s]    12 |     movement_controller_ = std::make_unique_ptr<MovementController[01;31m[K>[m[K(this);
+[1.672s]       |                                                                   [01;31m[K^[m[K
+[1.672s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:13:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique_ptr[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmake_unique[m[K’?
+[1.672s]    13 |     camera_processor_ = std::[01;31m[Kmake_unique_ptr[m[K<CameraProcessor>(this);
+[1.673s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.673s]       |                              [32m[Kmake_unique[m[K
+[1.673s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:13:61:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.673s]    13 |     camera_processor_ = std::make_unique_ptr<CameraProcessor[01;31m[K>[m[K(this);
+[1.673s]       |                                                             [01;31m[K^[m[K
+[1.673s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:14:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique_ptr[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmake_unique[m[K’?
+[1.673s]    14 |     path_viz_ = std::[01;31m[Kmake_unique_ptr[m[K<PathViz>(this);
+[1.673s]       |                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.673s]       |                      [32m[Kmake_unique[m[K
+[1.673s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:14:45:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.673s]    14 |     path_viz_ = std::make_unique_ptr<PathViz[01;31m[K>[m[K(this);
+[1.673s]       |                                             [01;31m[K^[m[K
+[1.674s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique_ptr[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmake_unique[m[K’?
+[1.674s]    15 |     wall_follower_ = std::[01;31m[Kmake_unique_ptr[m[K<WallFollower>(this);
+[1.674s]       |                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.674s]       |                           [32m[Kmake_unique[m[K
+[1.674s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:55:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.674s]    15 |     wall_follower_ = std::make_unique_ptr<WallFollower[01;31m[K>[m[K(this);
+[1.674s]       |                                                       [01;31m[K^[m[K
+[1.997s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+[1.997s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+[1.997s] gmake: *** [Makefile:146: all] Error 2
+[1.999s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16

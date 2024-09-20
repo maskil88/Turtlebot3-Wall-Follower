@@ -1,0 +1,25 @@
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In constructor ‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:28:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWallFollower::WallFollower()[m[K’
+   28 |         path_viz_(this->shared_from_this()[01;31m[K)[m[K/*,
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15[m[K:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/WallFollower.hpp:30:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KWallFollower::WallFollower(LidarSensor&, MovementController&)[m[K’
+   30 |     [01;36m[KWallFollower[m[K(LidarSensor& lidar, MovementController& mover);
+      |     [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/WallFollower.hpp:30:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/WallFollower.hpp:27:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr WallFollower::WallFollower(const WallFollower&)[m[K’
+   27 | class [01;36m[KWallFollower[m[K
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/WallFollower.hpp:27:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:32:76:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KWallFollower& WallFollower::operator=(const WallFollower&)[m[K’
+   32 |           wall_follower_ = WallFollower(lidar_sensor_, movement_controller_[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15[m[K:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/WallFollower.hpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[KWallFollower& WallFollower::operator=(const WallFollower&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   27 | class [01;36m[KWallFollower[m[K
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/WallFollower.hpp:27:7:[m[K [01;31m[Kerror: [m[Knon-static reference member ‘[01m[KLidarSensor& WallFollower::lidar_sensor_[m[K’, cannot use default assignment operator
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/WallFollower.hpp:27:7:[m[K [01;31m[Kerror: [m[Knon-static reference member ‘[01m[KMovementController& WallFollower::movement_controller_[m[K’, cannot use default assignment operator
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

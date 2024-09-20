@@ -1,0 +1,117 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:23 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:39:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcomment-Wcomment]8;;[m[K]
+   39 | [01;35m[K/[m[K/     "scan", \
+      | [01;35m[K^[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:42:1:[m[K [01;35m[Kwarning: [m[Kmulti-line comment [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcomment-Wcomment]8;;[m[K]
+   42 | [01;35m[K/[m[K/       &Turtlebot3Drive::scan_callback, \
+      | [01;35m[K^[m[K
+In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:1[m[K:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:47:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+   27 |         void scan_callback(const sensor_msgs::[01;31m[KLaserScan[m[K::SharedPtr msg);
+      |                                               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:68:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+   27 |         void scan_callback(const sensor_msgs::LaserScan::SharedPtr [01;31m[Kmsg[m[K);
+      |                                                                    [01;31m[K^~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+   27 |         void scan_callback[34m[K([m[Kconst sensor_msgs::LaserScan::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+      |                           [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                   [32m[K)[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   27 |         void scan_callback(const sensor_msgs::LaserScan::[01;31m[KSharedPtr[m[K msg);
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                                   [32m[K;[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   27 |         void scan_callback(const sensor_msgs::LaserScan::SharedPtr [01;31m[Kmsg[m[K);
+      |                                                                    [01;31m[K^~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:18:1:[m[K [01;31m[Kerror: [m[Knew types may not be defined in a return type
+   18 | [01;31m[Kclass[m[K LidarSensor
+      | [01;31m[K^~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:18:1:[m[K [01;36m[Knote: [m[K(perhaps a semicolon is missing after the definition of ‘[01m[KLidarSensor[m[K’)
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:18:1:[m[K [01;31m[Kerror: [m[Kreturn type specification for constructor invalid
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:[m[K In constructor ‘[01m[KLidarSensor::LidarSensor(rclcpp::Node::SharedPtr)[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:7:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_data[m[K’ was not declared in this scope; did you mean ‘[01m[Kscan_data_[m[K’?
+    7 |     for(int i = 0; i < NUM_LIDAR_ANGLES; i++){ [01;31m[Kscan_data[m[K[i] = 0.0; }
+      |                                                [01;31m[K^~~~~~~~~[m[K
+      |                                                [32m[Kscan_data_[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:[m[K At global scope:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:17:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid LidarSensor::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’
+   17 | void [01;31m[KLidarSensor[m[K::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:1[m[K:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid LidarSensor::scan_callback(...)[m[K’
+   27 |         void [01;36m[Kscan_callback[m[K(const sensor_msgs::LaserScan::SharedPtr msg);
+      |              [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass LidarSensor[m[K’ defined here
+   18 | class [01;36m[KLidarSensor[m[K
+      |       [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/turtlebot3_drive.hpp:17[m[K,
+                 from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:1[m[K:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:47:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+   27 |         void scan_callback(const sensor_msgs::[01;31m[KLaserScan[m[K::SharedPtr msg);
+      |                                               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:68:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+   27 |         void scan_callback(const sensor_msgs::LaserScan::SharedPtr [01;31m[Kmsg[m[K);
+      |                                                                    [01;31m[K^~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+   27 |         void scan_callback[34m[K([m[Kconst sensor_msgs::LaserScan::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+      |                           [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                   [32m[K)[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   27 |         void scan_callback(const sensor_msgs::LaserScan::[01;31m[KSharedPtr[m[K msg);
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                                   [32m[K;[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:27:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   27 |         void scan_callback(const sensor_msgs::LaserScan::SharedPtr [01;31m[Kmsg[m[K);
+      |                                                                    [01;31m[K^~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:32:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   32 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/LidarSensor.hpp:4[m[K,
+                 from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:1[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (LidarSensor::*(LidarSensor*, std::_Placeholder<1>))(...)> >[m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [with MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; CallbackT = std::_Bind<void (LidarSensor::*(LidarSensor*, std::_Placeholder<1>))(...)>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (LidarSensor::*(LidarSensor*, std::_Placeholder<1>))(...)>; MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; CallbackT = std::_Bind<void (LidarSensor::*(LidarSensor*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = sensor_msgs::msg::LaserScan_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; CallbackT = std::_Bind<void (LidarSensor::*(LidarSensor*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = sensor_msgs::msg::LaserScan_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; CallbackT = std::_Bind<void (LidarSensor::*(LidarSensor*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; CallbackT = std::_Bind<void (LidarSensor::*(LidarSensor*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:9:72:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In member function ‘[01m[Kvoid Turtlebot3Drive::update_callback()[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:148:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_turn_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  148 |   double [01;35m[Kmin_turn_distance[m[K = 0.1;         // Minimum distance before making a turn
+      |          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:90: CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

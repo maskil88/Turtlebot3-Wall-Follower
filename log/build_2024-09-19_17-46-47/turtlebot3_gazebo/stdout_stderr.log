@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[  8%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[ 25%] Built target obstacle1
+[ 41%] Built target obstacle2
+[ 58%] Built target obstacles
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In constructor ‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:27:60:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+   27 |         wall_follower_(lidar_sensor_, movement_controller_([01;31m[Knode[m[K))
+      |                                                            [01;31m[K^~~~[m[K
+      |                                                            [32m[KNode[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In member function ‘[01m[Kvoid Turtlebot3Drive::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:83:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<PathViz>[m[K’ has no member named ‘[01m[KupdatePath[m[K’
+   83 |           path_viz_.[01;31m[KupdatePath[m[K(pose_stamped);
+      |                     [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

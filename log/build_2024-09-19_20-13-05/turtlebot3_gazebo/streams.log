@@ -1,0 +1,14 @@
+[0.008s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[0.070s] [ 11%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[0.075s] [ 33%] Built target obstacles
+[0.075s] [ 55%] Built target obstacle2
+[0.077s] [ 77%] Built target obstacle1
+[0.206s] In file included from [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:1[m[K:
+[0.206s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/include/turtlebot3_gazebo/turtlebot3_drive.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Klidar_sensor.hpp: No such file or directory
+[0.206s]     5 | #include [01;31m[K"lidar_sensor.hpp"[m[K
+[0.206s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.206s] compilation terminated.
+[0.207s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+[0.208s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+[0.208s] gmake: *** [Makefile:146: all] Error 2
+[0.210s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16

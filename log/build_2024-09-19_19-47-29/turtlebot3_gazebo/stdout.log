@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.o[0m
+[ 44%] Built target obstacle1
+[ 66%] Built target obstacles
+[ 88%] Built target obstacle2

@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[ 37%] Built target obstacle1
+[ 62%] Built target obstacles
+[ 87%] Built target obstacle2
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In constructor ‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:54:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgreen_block_detected[m[K’ was not declared in this scope; did you mean ‘[01m[Kgreen_block_detected_[m[K’?
+   54 |   [01;31m[Kgreen_block_detected[m[K = false;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[Kgreen_block_detected_[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In member function ‘[01m[Kvoid Turtlebot3Drive::update_callback()[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:144:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_turn_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  144 |   double [01;35m[Kmin_turn_distance[m[K = 0.1;         // Minimum distance before making a turn
+      |          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

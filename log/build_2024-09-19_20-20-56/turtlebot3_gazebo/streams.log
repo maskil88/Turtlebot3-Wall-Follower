@@ -1,0 +1,40 @@
+[0.009s] Invoking command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[0.064s] [ 22%] Built target obstacle1
+[0.065s] [ 44%] Built target obstacle2
+[0.065s] [ 66%] Built target obstacles
+[0.066s] [ 77%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[1.677s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In constructor ‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’:
+[1.677s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:11:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<LidarSensor>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<LidarSensor, std::default_delete<LidarSensor> >[m[K’} to ‘[01m[KLidarSensor*[m[K’ in assignment
+[1.677s]    11 |     lidar_sensor_ = [01;31m[Kstd::make_unique<LidarSensor>(this)[m[K;
+[1.677s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.678s]       |                                                  [01;31m[K|[m[K
+[1.678s]       |                                                  [01;31m[Kstd::_MakeUniq<LidarSensor>::__single_object {aka std::unique_ptr<LidarSensor, std::default_delete<LidarSensor> >}[m[K
+[1.681s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:12:64:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<MovementController>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<MovementController, std::default_delete<MovementController> >[m[K’} to ‘[01m[KMovementController*[m[K’ in assignment
+[1.681s]    12 |     movement_controller_ = [01;31m[Kstd::make_unique<MovementController>(this)[m[K;
+[1.681s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.681s]       |                                                                [01;31m[K|[m[K
+[1.681s]       |                                                                [01;31m[Kstd::_MakeUniq<MovementController>::__single_object {aka std::unique_ptr<MovementController, std::default_delete<MovementController> >}[m[K
+[1.684s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:13:58:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<CameraProcessor>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<CameraProcessor, std::default_delete<CameraProcessor> >[m[K’} to ‘[01m[KCameraProcessor*[m[K’ in assignment
+[1.684s]    13 |     camera_processor_ = [01;31m[Kstd::make_unique<CameraProcessor>(this)[m[K;
+[1.684s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.684s]       |                                                          [01;31m[K|[m[K
+[1.684s]       |                                                          [01;31m[Kstd::_MakeUniq<CameraProcessor>::__single_object {aka std::unique_ptr<CameraProcessor, std::default_delete<CameraProcessor> >}[m[K
+[1.687s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:14:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<PathViz>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<PathViz, std::default_delete<PathViz> >[m[K’} to ‘[01m[KPathViz*[m[K’ in assignment
+[1.688s]    14 |     path_viz_ = [01;31m[Kstd::make_unique<PathViz>(this)[m[K;
+[1.688s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.688s]       |                                          [01;31m[K|[m[K
+[1.688s]       |                                          [01;31m[Kstd::_MakeUniq<PathViz>::__single_object {aka std::unique_ptr<PathViz, std::default_delete<PathViz> >}[m[K
+[1.688s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:73:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[K((Turtlebot3Drive*)this)->Turtlebot3Drive::lidar_sensor_[m[K’, which is of pointer type ‘[01m[KLidarSensor*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[1.688s]    15 |     wall_follower_ = std::make_unique<WallFollower>(this, lidar_sensor_.[01;31m[Kget[m[K(), movement_controller_.get(), camera_processor_.get());
+[1.688s]       |                                                                         [01;31m[K^~~[m[K
+[1.688s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:101:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[K((Turtlebot3Drive*)this)->Turtlebot3Drive::movement_controller_[m[K’, which is of pointer type ‘[01m[KMovementController*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[1.688s]    15 |     wall_follower_ = std::make_unique<WallFollower>(this, lidar_sensor_.get(), movement_controller_.[01;31m[Kget[m[K(), camera_processor_.get());
+[1.688s]       |                                                                                                     [01;31m[K^~~[m[K
+[1.688s] [01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:126:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[K((Turtlebot3Drive*)this)->Turtlebot3Drive::camera_processor_[m[K’, which is of pointer type ‘[01m[KCameraProcessor*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[1.688s]    15 |     wall_follower_ = std::make_unique<WallFollower>(this, lidar_sensor_.get(), movement_controller_.get(), camera_processor_.[01;31m[Kget[m[K());
+[1.688s]       |                                                                                                                              [01;31m[K^~~[m[K
+[2.017s] gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+[2.017s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+[2.017s] gmake: *** [Makefile:146: all] Error 2
+[2.020s] Invoked command in '/home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kivaan123/Turtlebot3-Wall-Follower/build/turtlebot3_gazebo -- -j16 -l16

@@ -1,0 +1,33 @@
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In constructor ‘[01m[KTurtlebot3Drive::Turtlebot3Drive()[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:11:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<LidarSensor>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<LidarSensor, std::default_delete<LidarSensor> >[m[K’} to ‘[01m[KLidarSensor*[m[K’ in assignment
+   11 |     lidar_sensor_ = [01;31m[Kstd::make_unique<LidarSensor>(this)[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+      |                                                  [01;31m[K|[m[K
+      |                                                  [01;31m[Kstd::_MakeUniq<LidarSensor>::__single_object {aka std::unique_ptr<LidarSensor, std::default_delete<LidarSensor> >}[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:12:64:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<MovementController>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<MovementController, std::default_delete<MovementController> >[m[K’} to ‘[01m[KMovementController*[m[K’ in assignment
+   12 |     movement_controller_ = [01;31m[Kstd::make_unique<MovementController>(this)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+      |                                                                [01;31m[K|[m[K
+      |                                                                [01;31m[Kstd::_MakeUniq<MovementController>::__single_object {aka std::unique_ptr<MovementController, std::default_delete<MovementController> >}[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:13:58:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<CameraProcessor>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<CameraProcessor, std::default_delete<CameraProcessor> >[m[K’} to ‘[01m[KCameraProcessor*[m[K’ in assignment
+   13 |     camera_processor_ = [01;31m[Kstd::make_unique<CameraProcessor>(this)[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+      |                                                          [01;31m[K|[m[K
+      |                                                          [01;31m[Kstd::_MakeUniq<CameraProcessor>::__single_object {aka std::unique_ptr<CameraProcessor, std::default_delete<CameraProcessor> >}[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:14:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<PathViz>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<PathViz, std::default_delete<PathViz> >[m[K’} to ‘[01m[KPathViz*[m[K’ in assignment
+   14 |     path_viz_ = [01;31m[Kstd::make_unique<PathViz>(this)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+      |                                          [01;31m[K|[m[K
+      |                                          [01;31m[Kstd::_MakeUniq<PathViz>::__single_object {aka std::unique_ptr<PathViz, std::default_delete<PathViz> >}[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:73:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[K((Turtlebot3Drive*)this)->Turtlebot3Drive::lidar_sensor_[m[K’, which is of pointer type ‘[01m[KLidarSensor*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+   15 |     wall_follower_ = std::make_unique<WallFollower>(this, lidar_sensor_.[01;31m[Kget[m[K(), movement_controller_.get(), camera_processor_.get());
+      |                                                                         [01;31m[K^~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:101:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[K((Turtlebot3Drive*)this)->Turtlebot3Drive::movement_controller_[m[K’, which is of pointer type ‘[01m[KMovementController*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+   15 |     wall_follower_ = std::make_unique<WallFollower>(this, lidar_sensor_.get(), movement_controller_.[01;31m[Kget[m[K(), camera_processor_.get());
+      |                                                                                                     [01;31m[K^~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:15:126:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[K((Turtlebot3Drive*)this)->Turtlebot3Drive::camera_processor_[m[K’, which is of pointer type ‘[01m[KCameraProcessor*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+   15 |     wall_follower_ = std::make_unique<WallFollower>(this, lidar_sensor_.get(), movement_controller_.get(), camera_processor_.[01;31m[Kget[m[K());
+      |                                                                                                                              [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:76: CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

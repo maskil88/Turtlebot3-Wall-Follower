@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[ 44%] Built target obstacles
+[ 66%] Built target obstacle1
+[ 88%] Built target obstacle2
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:[m[K In constructor ‘[01m[KLidarSensor::LidarSensor(rclcpp::Node*)[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:5:13:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Node*[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr*[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>*[m[K’} in assignment
+    5 |     node_ = [01;31m[Knode[m[K;
+      |             [01;31m[K^~~~[m[K
+      |             [01;31m[K|[m[K
+      |             [01;31m[Krclcpp::Node*[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:9:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Node>[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Node>[m[K’} has no member named ‘[01m[Kcreate_subscription[m[K’
+    9 |     scan_sub_ = node_->[01;31m[Kcreate_subscription[m[K<sensor_msgs::msg::LaserScan>(
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:9:71:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+    9 |     scan_sub_ = node_->create_subscription<sensor_msgs::msg::LaserScan[01;31m[K>[m[K(
+      |                                                                       [01;31m[K^[m[K
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/LidarSensor.cpp:10:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   10 |         [01;35m[K"scan"[m[K,
+      |         [01;35m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_drive.dir/build.make:90: CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:[m[K In member function ‘[01m[Kvoid Turtlebot3Drive::update_callback()[m[K’:
+[01m[K/home/kivaan123/Turtlebot3-Wall-Follower/turtlebot3_gazebo/src/turtlebot3_drive.cpp:149:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_turn_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  149 |   double [01;35m[Kmin_turn_distance[m[K = 0.1;         // Minimum distance before making a turn
+      |          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

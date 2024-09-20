@@ -321,6 +321,126 @@ models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles.dir/build.make CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.s
 .PHONY : models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.s
 
+src/CameraProcessor.o: src/CameraProcessor.cpp.o
+.PHONY : src/CameraProcessor.o
+
+# target to build an object file
+src/CameraProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/CameraProcessor.cpp.o
+.PHONY : src/CameraProcessor.cpp.o
+
+src/CameraProcessor.i: src/CameraProcessor.cpp.i
+.PHONY : src/CameraProcessor.i
+
+# target to preprocess a source file
+src/CameraProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/CameraProcessor.cpp.i
+.PHONY : src/CameraProcessor.cpp.i
+
+src/CameraProcessor.s: src/CameraProcessor.cpp.s
+.PHONY : src/CameraProcessor.s
+
+# target to generate assembly for a file
+src/CameraProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/CameraProcessor.cpp.s
+.PHONY : src/CameraProcessor.cpp.s
+
+src/LidarSensor.o: src/LidarSensor.cpp.o
+.PHONY : src/LidarSensor.o
+
+# target to build an object file
+src/LidarSensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.o
+.PHONY : src/LidarSensor.cpp.o
+
+src/LidarSensor.i: src/LidarSensor.cpp.i
+.PHONY : src/LidarSensor.i
+
+# target to preprocess a source file
+src/LidarSensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.i
+.PHONY : src/LidarSensor.cpp.i
+
+src/LidarSensor.s: src/LidarSensor.cpp.s
+.PHONY : src/LidarSensor.s
+
+# target to generate assembly for a file
+src/LidarSensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/LidarSensor.cpp.s
+.PHONY : src/LidarSensor.cpp.s
+
+src/MovementController.o: src/MovementController.cpp.o
+.PHONY : src/MovementController.o
+
+# target to build an object file
+src/MovementController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/MovementController.cpp.o
+.PHONY : src/MovementController.cpp.o
+
+src/MovementController.i: src/MovementController.cpp.i
+.PHONY : src/MovementController.i
+
+# target to preprocess a source file
+src/MovementController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/MovementController.cpp.i
+.PHONY : src/MovementController.cpp.i
+
+src/MovementController.s: src/MovementController.cpp.s
+.PHONY : src/MovementController.s
+
+# target to generate assembly for a file
+src/MovementController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/MovementController.cpp.s
+.PHONY : src/MovementController.cpp.s
+
+src/PathViz.o: src/PathViz.cpp.o
+.PHONY : src/PathViz.o
+
+# target to build an object file
+src/PathViz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/PathViz.cpp.o
+.PHONY : src/PathViz.cpp.o
+
+src/PathViz.i: src/PathViz.cpp.i
+.PHONY : src/PathViz.i
+
+# target to preprocess a source file
+src/PathViz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/PathViz.cpp.i
+.PHONY : src/PathViz.cpp.i
+
+src/PathViz.s: src/PathViz.cpp.s
+.PHONY : src/PathViz.s
+
+# target to generate assembly for a file
+src/PathViz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/PathViz.cpp.s
+.PHONY : src/PathViz.cpp.s
+
+src/WallFollower.o: src/WallFollower.cpp.o
+.PHONY : src/WallFollower.o
+
+# target to build an object file
+src/WallFollower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/WallFollower.cpp.o
+.PHONY : src/WallFollower.cpp.o
+
+src/WallFollower.i: src/WallFollower.cpp.i
+.PHONY : src/WallFollower.i
+
+# target to preprocess a source file
+src/WallFollower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/WallFollower.cpp.i
+.PHONY : src/WallFollower.cpp.i
+
+src/WallFollower.s: src/WallFollower.cpp.s
+.PHONY : src/WallFollower.s
+
+# target to generate assembly for a file
+src/WallFollower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_drive.dir/build.make CMakeFiles/turtlebot3_drive.dir/src/WallFollower.cpp.s
+.PHONY : src/WallFollower.cpp.s
+
 src/turtlebot3_drive.o: src/turtlebot3_drive.cpp.o
 .PHONY : src/turtlebot3_drive.o
 
@@ -373,6 +493,21 @@ help:
 	@echo "... models/turtlebot3_dqn_world/obstacle_plugin/obstacles.o"
 	@echo "... models/turtlebot3_dqn_world/obstacle_plugin/obstacles.i"
 	@echo "... models/turtlebot3_dqn_world/obstacle_plugin/obstacles.s"
+	@echo "... src/CameraProcessor.o"
+	@echo "... src/CameraProcessor.i"
+	@echo "... src/CameraProcessor.s"
+	@echo "... src/LidarSensor.o"
+	@echo "... src/LidarSensor.i"
+	@echo "... src/LidarSensor.s"
+	@echo "... src/MovementController.o"
+	@echo "... src/MovementController.i"
+	@echo "... src/MovementController.s"
+	@echo "... src/PathViz.o"
+	@echo "... src/PathViz.i"
+	@echo "... src/PathViz.s"
+	@echo "... src/WallFollower.o"
+	@echo "... src/WallFollower.i"
+	@echo "... src/WallFollower.s"
 	@echo "... src/turtlebot3_drive.o"
 	@echo "... src/turtlebot3_drive.i"
 	@echo "... src/turtlebot3_drive.s"
