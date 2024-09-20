@@ -30,7 +30,7 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
 - `turtlebot3_gazebo/`
   - `CMakeLists.txt`
 - `turtlebot3_gazebo/worlds`
-  - `empty_world.world`: Maps drawn into empty world.
+
   
 ## Dependencies
 - **ROS 2 Humble**: The project is built using ROS 2. Install ROS 2 Humble from the official [ROS website](https://docs.ros.org/en/humble/Installation.html).
