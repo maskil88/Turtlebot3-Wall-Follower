@@ -16,7 +16,7 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
   - `WallFollower.cpp`: Implements the left wall-following logic using LIDAR data.
   - `LidarSensor.cpp`: Handles LIDAR sensor data to detect obstacles and walls.
   - `MovementController.cpp`: Publishes velocity commands to the robot's wheels.
-  - `CameraProcessor.cpp`: Processes camera feed to detect green blocks.
+  - `CameraProcessor.cpp`: Processes camera feed to detect green block that signals end of maze.
   - `PathViz.cpp`: Publishes the robot's path for visualization.
 - `turtlebot3_gazebo/include/turtlebot3_gazebo/`
   - `turtlebot3_drive.hpp`: Header file for the `Turtlebot3Drive` node.
@@ -39,19 +39,20 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
 - **LIDAR and Camera**: The robot uses LIDAR and camera for sensor input.
 
 ## Installation
+1. Simulate a Turtlebot 3 in RViz and Gazebo, including simulated laser and camera:
+   follow the instructions here, up to and including Section 6.2. Select humble:
+   https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/
 
-1. Clone the repository:
+2. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/turtlebot3-wall-following.git
    cd turtlebot3-wall-following
 
-2. follow the links below to install ROS 2 Humble, OpenCV,
-3. Build the workspace:
+3. If you're having trouble launching, use the following commands
    ```bash
-   colcon build
-6. Source the workspace:
-   ```bash
-   source install/setup.bash
+   killall gzserver
+   killall gzclient
+   . /usr/share/gazebo/setup.sh
 
 
 ## Usage Instructions
