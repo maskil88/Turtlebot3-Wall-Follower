@@ -18,7 +18,7 @@ LidarSensor::~LidarSensor(){}
 
 void LidarSensor::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
 {
-    uint16_t scan_angle[NUM_LIDAR_ANGLES] = {0, 30, 60, 90, 120, 270, 330};
+    uint16_t scan_angle[NUM_LIDAR_ANGLES] = {0, 40, 60, 90, 120, 270, 330};
 
     for (int num = 0; num < NUM_LIDAR_ANGLES; num++)
     {
