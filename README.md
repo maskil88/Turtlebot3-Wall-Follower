@@ -65,7 +65,7 @@ This project implements a left-wall-following robot using the TurtleBot3 platfor
    ```bash
    ros2 run turtlebot3_gazebo turtlebot3_drive
    
-3. Place the robot adjacent to the left wall at the starting point
+3. Rotate the robot 90 degrees to the left. Place the robot adjacent to the left wall at the starting point
 
 5. Place the green block at the end of the maze, parallel to the left wall.
 
